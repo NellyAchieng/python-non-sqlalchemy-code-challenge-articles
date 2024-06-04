@@ -205,8 +205,8 @@ class TestMagazine:
 
     def test_top_publisher(self):
         """returns the magazine with the most articles"""
-        Magazine._all_magazines = []
-        Article._all_articles = []
+        Magazine.all= []
+        Article.all = []
         assert Magazine.top_publisher() == None
 
         author_1 = Author("Carry Bradshaw")
